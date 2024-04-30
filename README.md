@@ -18,3 +18,5 @@
 
 1. Sends empty message to the server above.
 2. The server needs to be started to provide the service.
+
+`roslaunch service_server_pkg call_bb8_move_in_circle_service_server.launch`

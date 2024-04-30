@@ -1,5 +1,7 @@
 ### `service_server_pkg`
 
+#### `simple_service_server`
+
 `roslaunch service_server_pkg service_server.launch`
 
 1. Service with no arguments, no messages (`std_srvs/Empty`)

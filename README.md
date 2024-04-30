@@ -13,3 +13,8 @@
 2. Publishes `geometry_msgs::Twist` messages to `/cmd_vel` to move the BB8 robot in a circle.
 
 `roslaunch service_server_pkg start_bb8_move_in_circle_service_server.launch`
+
+#### [`bb8_move_in_circle_service_client`](src/bb8_move_in_circle_service_client.cpp)
+
+1. Sends empty message to the server above.
+2. The server needs to be started to provide the service.

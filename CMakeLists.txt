@@ -138,6 +138,7 @@ add_executable(simple_service_server src/simple_service_server.cpp)
 add_executable(bb8_move_in_circle_service_server src/bb8_move_in_circle_service_server.cpp)
 add_executable(bb8_move_in_circle_service_client src/bb8_move_in_circle_service_client.cpp)
 add_executable(bb8_move_custom_service_server src/bb8_move_custom_service_server.cpp)
+add_executable(bb8_move_custom_service_client src/bb8_move_custom_service_client.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -152,6 +153,7 @@ add_dependencies(simple_service_server ${simple_service_server_EXPORTED_TARGETS}
 add_dependencies(bb8_move_in_circle_service_server ${bb8_move_in_circle_service_server_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(bb8_move_in_circle_service_client ${bb8_move_in_circle_service_client_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(bb8_move_custom_service_server ${bb8_move_custom_service_server_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(bb8_move_custom_service_client ${bb8_move_custom_service_client_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(${PROJECT_NAME}_node
@@ -167,6 +169,9 @@ target_link_libraries(bb8_move_in_circle_service_client
   ${catkin_LIBRARIES}
 )
 target_link_libraries(bb8_move_custom_service_server
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(bb8_move_custom_service_client
   ${catkin_LIBRARIES}
 )
 

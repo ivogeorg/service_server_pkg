@@ -35,10 +35,11 @@
 `roslaunch service_server_pkg start_bb8_move_custom_service_server.launch`
 
 
-~#### [`bb8_move_custom_service_client`](src/bb8_move_custom_service_client.cpp)~
+#### [`bb8_move_custom_service_client`](src/bb8_move_custom_service_client.cpp)
 
-~1. Sends custom message to the server above.~
-~2. The server needs to be started to provide the service.~
+1. Sends custom message to the server above.
+2. The server needs to be started to provide the service.
+3. The server sends `success=true` upon completion of the `msg.request.duration` bound motion in circle of the robot.
 
-~`roslaunch service_server_pkg call_bb8_move_in_circle_service_server.launch`~
+`roslaunch service_server_pkg call_bb8_move_custom_service_server.launch`
 

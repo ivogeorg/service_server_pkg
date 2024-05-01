@@ -35,7 +35,7 @@
 `roslaunch service_server_pkg start_bb8_move_custom_service_server.launch`
 
 
-#### [`bb8_move_custom_service_client`](src/bb8_move_custom_service_client.cpp)
+#### 6. [`bb8_move_custom_service_client`](src/bb8_move_custom_service_client.cpp)
 
 1. Sends custom message to the server above.
 2. The server needs to be started to provide the service.
